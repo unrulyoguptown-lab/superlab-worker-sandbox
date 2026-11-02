@@ -1,0 +1,13 @@
+name: Synthetic worker smoke
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm runner
+        run: echo "Synthetic worker runner is operational."
